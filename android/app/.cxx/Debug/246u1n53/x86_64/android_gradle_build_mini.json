@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "C:\\android\\flutter\\packages\\flutter_tools\\gradle\\src\\main\\groovy\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\bened\\AppData\\Local\\Android\\sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\bened\\Downloads\\SnapAttend-main\\SnapAttend-main\\android\\app\\.cxx\\Debug\\246u1n53\\x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\bened\\AppData\\Local\\Android\\sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\bened\\Downloads\\SnapAttend-main\\SnapAttend-main\\android\\app\\.cxx\\Debug\\246u1n53\\x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}
