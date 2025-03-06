@@ -46,7 +46,8 @@ Snap Attend is built using modern and efficient technologies:
 
 Here’s a sneak peek at what you can expect:  
 
-![app_preview](assets/images/mockup.png)
+![app_preview](![Slide 16_9 - 4](https://github.com/user-attachments/assets/bf58310c-7444-49b7-a721-8c9e8c3a57f4)
+)
 
 ---
 
