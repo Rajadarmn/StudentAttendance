@@ -55,7 +55,7 @@ class _AttendScreenState extends State<AttendScreen> {
           flexibleSpace: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [Colors.green.shade900,Colors.greenAccent,],
+                colors: [Colors.green,Colors.greenAccent,],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter
               )
@@ -96,7 +96,7 @@ class _AttendScreenState extends State<AttendScreen> {
                     topRight: Radius.circular(10)
                   ),
                   gradient: LinearGradient(
-                    colors: [Colors.blue.shade900, Colors.blueAccent],
+                    colors: [Colors.green, Colors.greenAccent],
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter
                   )
@@ -142,7 +142,7 @@ class _AttendScreenState extends State<AttendScreen> {
                   child: DottedBorder(
                     radius: Radius.circular(10),
                     borderType: BorderType.RRect,
-                    color: Colors.blue.shade900,
+                    color: Colors.green.shade900,
                     strokeWidth: 1,
                     dashPattern: [5,5],
                     child: SizedBox.expand(
@@ -153,9 +153,9 @@ class _AttendScreenState extends State<AttendScreen> {
                                 shaderCallback: (Rect bounds) {
                                   return LinearGradient(
                                     colors: [
-                                      Colors.blue.shade900,
-                                      Colors.blueAccent,
-                                      Colors.blue.shade900
+                                      Colors.greenAccent,
+                                      Colors.greenAccent,
+                                      Colors.greenAccent,
                                     ], // Warna gradient
                                     begin: Alignment.topLeft,
                                     end: Alignment.bottomRight,
@@ -189,19 +189,19 @@ class _AttendScreenState extends State<AttendScreen> {
                     ),
                     labelStyle: TextStyle(
                       fontSize: 14,
-                      color: Colors.blue.shade900,
+                      color: Colors.greenAccent,
                       fontWeight: FontWeight.bold
                     ),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide(
-                        color: Colors.blue.shade900,
+                        color: Colors.greenAccent,
                       )
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide(
-                        color: Colors.blue.shade900,
+                        color: Colors.greenAccent,
                       )
                     ),
                   ),
@@ -214,12 +214,12 @@ class _AttendScreenState extends State<AttendScreen> {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Colors.blue.shade900
+                    color: Colors.greenAccent
                   ),  
                 )
               ),
               isLoading
-                  ? Center(child: CircularProgressIndicator(color: Colors.blue.shade900,))
+                  ? Center(child: CircularProgressIndicator(color: Colors.green.shade800,))
                   : Padding(
                 padding: EdgeInsets.all(10),
                 child: SizedBox(
@@ -232,7 +232,7 @@ class _AttendScreenState extends State<AttendScreen> {
                       disabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide(
-                          color: Colors.blue.shade900,
+                          color: Colors.green,
                         )
                       ),
                       hintText: strAlamat != null
@@ -258,7 +258,7 @@ class _AttendScreenState extends State<AttendScreen> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       gradient: LinearGradient(
-                        colors: [Colors.blue.shade900, Colors.blueAccent],
+                        colors: [Colors.green, Colors.greenAccent],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                       ),
@@ -383,7 +383,7 @@ class _AttendScreenState extends State<AttendScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.blueAccent),
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.greenAccent),
             ),
             SizedBox(width: 10),
             Text('Checking data...')
@@ -402,7 +402,7 @@ class _AttendScreenState extends State<AttendScreen> {
   void submitAbsen(String? strAlamat, String name, String? strStatus) async {
     showLoaderDialog(context);
 
-    dataCollection.add({
+    await dataCollection.add({
       'address': strAlamat,
       'name': name,
       'status': strStatus,

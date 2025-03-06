@@ -6,11 +6,13 @@ class AttendanceHistoryScreen extends StatefulWidget {
   const AttendanceHistoryScreen({super.key});
 
   @override
-  State<AttendanceHistoryScreen> createState() => _AttendanceHistoryScreenState();
+  State<AttendanceHistoryScreen> createState() =>
+      _AttendanceHistoryScreenState();
 }
 
 class _AttendanceHistoryScreenState extends State<AttendanceHistoryScreen> {
-  final CollectionReference dataCollection = FirebaseFirestore.instance.collection('attendance');
+  final CollectionReference dataCollection =
+      FirebaseFirestore.instance.collection('attendance');
 
   @override
   Widget build(BuildContext context) {
@@ -21,39 +23,37 @@ class _AttendanceHistoryScreenState extends State<AttendanceHistoryScreen> {
         child: AppBar(
           flexibleSpace: Container(
             decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [Colors.blue.shade900,Colors.blueAccent,],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter
-              )
-            ),
+                gradient: LinearGradient(
+                    colors: [Colors.green, Colors.greenAccent],
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter)),
           ),
           leading: IconButton(
             onPressed: () {
               Navigator.pop(context);
-            }, 
-            icon: Icon(Icons.arrow_back_ios_new, color: Colors.white,),
+            },
+            icon: Icon(
+              Icons.arrow_back_ios_new,
+              color: Colors.white,
+            ),
           ),
           title: Text(
             'Attendance History',
             style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: Colors.white
-            ),
+                fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
           ),
         ),
       ),
       body: FutureBuilder<QuerySnapshot>(
-        future: dataCollection.get(), 
-        builder: (context, snapshot) {
-          if (snapshot.hasData) {
-            var data = snapshot.data!.docs;
-            return ListView.builder(
-              itemCount: data.length,
-              itemBuilder: (context, index) {
-                return GestureDetector(
-                  onTap: () {
+          future: dataCollection.get(),
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              var data = snapshot.data!.docs;
+              return ListView.builder(
+                itemCount: data.length,
+                itemBuilder: (context, index) {
+                  return GestureDetector(
+                    onTap: () {
                       AlertDialog deleteDialog = AlertDialog(
                         title: Text(
                           'ALERT',
@@ -101,12 +101,10 @@ class _AttendanceHistoryScreenState extends State<AttendanceHistoryScreen> {
                           context: context,
                           builder: (BuildContext context) => deleteDialog);
                     },
-                  child: Card(
+                    child: Card(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
-                        side: BorderSide(
-                            color: Colors.blue.shade800,
-                            width: 3),
+                        side: BorderSide(color: Colors.green, width: 3),
                       ),
                       elevation: 0,
                       margin: EdgeInsets.all(10),
@@ -120,10 +118,7 @@ class _AttendanceHistoryScreenState extends State<AttendanceHistoryScreen> {
                               width: 50,
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
-                                    colors: [
-                                      Colors.blue.shade900,
-                                      Colors.blueAccent
-                                    ],
+                                    colors: [Colors.green, Colors.greenAccent],
                                     begin: Alignment.topLeft,
                                     end: Alignment.bottomRight),
                                 borderRadius: BorderRadius.circular(50),
@@ -275,18 +270,17 @@ class _AttendanceHistoryScreenState extends State<AttendanceHistoryScreen> {
                         ),
                       ),
                     ),
-                );
-              },
-            );
-          } else {
-            return Center(
-              child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Colors.blueAccent),
-              ),
-            );
-          }
-        }
-      ),
+                  );
+                },
+              );
+            } else {
+              return Center(
+                child: CircularProgressIndicator(
+                  valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
+                ),
+              );
+            }
+          }),
     );
   }
 }

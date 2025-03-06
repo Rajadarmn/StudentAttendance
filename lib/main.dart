@@ -31,7 +31,7 @@ class MainApp extends StatelessWidget {
           surfaceTintColor: Colors.white,
           backgroundColor: Colors.white,
         ),
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
         useMaterial3: true,
       ),
       home: const HomeScreen(),

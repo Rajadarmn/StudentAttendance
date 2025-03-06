@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "341667049634",
-    "project_id": "my-student-absences",
-    "storage_bucket": "my-student-absences.firebasestorage.app"
+    "project_number": "632697020623",
+    "project_id": "snapshot-attendance",
+    "storage_bucket": "snapshot-attendance.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:341667049634:android:73695350fb28c20a4be7fb",
+        "mobilesdk_app_id": "1:632697020623:android:f8683c0aeb60d6bf1297ba",
         "android_client_info": {
           "package_name": "com.example.students_attendance_with_mlkit"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBVPINY0mGTcm4vzysxzS5zBEaDXm2x5S4"
+          "current_key": "AIzaSyDDmeDbYrgzI2Csx-qovJPDUP8lxFB0Vnc"
         }
       ],
       "services": {

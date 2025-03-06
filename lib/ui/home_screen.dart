@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w300,
-                    color: Colors.greenAccent.shade700,
+                    color: Colors.greenAccent,
                   ),
                 ),
                 Text(
@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
-                    color: Colors.greenAccent.shade700,
+                    color: Colors.greenAccent,
                   ),
                 ),
                 SizedBox(height: 30),
@@ -99,10 +99,14 @@ class HomeScreen extends StatelessWidget {
         width: double.infinity,
         padding: EdgeInsets.all(50),
         decoration: BoxDecoration(
-          color: Colors.greenAccent.shade700,
+          gradient: LinearGradient(
+            colors: [Colors.greenAccent, Colors.greenAccent.shade400],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.2),
+              color: Colors.greenAccent.withOpacity(0.2),
               blurRadius: 10,
               offset: Offset(0, 5),
             ),
@@ -135,7 +139,7 @@ class HomeScreen extends StatelessWidget {
             title: Text(
               'INFO',
               style: TextStyle(
-                color: Colors.black,
+                color: Colors.greenAccent,
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
@@ -153,7 +157,7 @@ class HomeScreen extends StatelessWidget {
                 child: Text(
                   'No',
                   style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.greenAccent,
                     fontSize: 14,
                   ),
                 ),
@@ -163,7 +167,7 @@ class HomeScreen extends StatelessWidget {
                 child: Text(
                   'Yes',
                   style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.greenAccent,
                     fontSize: 14,
                   ),
                 ),

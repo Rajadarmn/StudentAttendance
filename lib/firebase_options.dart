@@ -47,20 +47,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC0YAbcdXIgcaLkxiljCtYHalARibkaUgw',
-    appId: '1:341667049634:web:b943373ae15a952e4be7fb',
-    messagingSenderId: '341667049634',
-    projectId: 'my-student-absences',
-    authDomain: 'my-student-absences.firebaseapp.com',
-    storageBucket: 'my-student-absences.firebasestorage.app',
+    apiKey: 'AIzaSyBc3Nx5Ul_8CGgnrih4OgwZ5omnRceTNx0',
+    appId: '1:632697020623:web:abca0b41217c3cbf1297ba',
+    messagingSenderId: '632697020623',
+    projectId: 'snapshot-attendance',
+    authDomain: 'snapshot-attendance.firebaseapp.com',
+    storageBucket: 'snapshot-attendance.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBVPINY0mGTcm4vzysxzS5zBEaDXm2x5S4',
-    appId: '1:341667049634:android:73695350fb28c20a4be7fb',
-    messagingSenderId: '341667049634',
-    projectId: 'my-student-absences',
-    storageBucket: 'my-student-absences.firebasestorage.app',
+    apiKey: 'AIzaSyDDmeDbYrgzI2Csx-qovJPDUP8lxFB0Vnc',
+    appId: '1:632697020623:android:f8683c0aeb60d6bf1297ba',
+    messagingSenderId: '632697020623',
+    projectId: 'snapshot-attendance',
+    storageBucket: 'snapshot-attendance.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(

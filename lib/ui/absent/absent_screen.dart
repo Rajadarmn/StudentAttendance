@@ -41,7 +41,7 @@ class _AbsentScreenState extends State<AbsentScreen> {
           flexibleSpace: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [Colors.blue.shade900,Colors.blueAccent,],
+                colors: [Colors.green,Colors.greenAccent,],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter
               )
@@ -78,7 +78,7 @@ class _AbsentScreenState extends State<AbsentScreen> {
                 height: 50,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
-                    colors: [Colors.blue.shade900, Colors.blueAccent],
+                    colors: [Colors.green, Colors.greenAccent],
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter
                   ),
@@ -118,16 +118,16 @@ class _AbsentScreenState extends State<AbsentScreen> {
                     hintStyle: TextStyle(fontSize: 14, color: Colors.grey),
                     labelStyle: TextStyle(
                       fontSize: 14,
-                      color: Colors.blue.shade900,
+                      color: Colors.greenAccent,
                       fontWeight: FontWeight.bold
                     ),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(color: Colors.blue.shade900)
+                      borderSide: BorderSide(color: Colors.greenAccent)
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(color: Colors.blue.shade900)
+                      borderSide: BorderSide(color: Colors.greenAccent)
                     ),
                   ),
                 ),
@@ -138,7 +138,7 @@ class _AbsentScreenState extends State<AbsentScreen> {
                   'Description',
                   style: TextStyle(
                     fontSize: 16,
-                    color: Colors.blue.shade900,
+                    color: Colors.greenAccent,
                     fontWeight: FontWeight.bold
                   ),
                 ),
@@ -149,7 +149,7 @@ class _AbsentScreenState extends State<AbsentScreen> {
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   decoration: BoxDecoration(
                     border: Border.all(
-                      color: Colors.blue.shade900,
+                      color: Colors.greenAccent,
                       style: BorderStyle.solid,
                       width: 1
                     ),
@@ -167,7 +167,7 @@ class _AbsentScreenState extends State<AbsentScreen> {
                       return DropdownMenuItem(
                         value: value.toString(),
                         child: Text(value.toString(), style: TextStyle(
-                          color: Colors.blue.shade900,
+                          color: Colors.greenAccent,
                           fontSize: 14,
                           fontWeight: FontWeight.bold
                         )),
@@ -199,7 +199,7 @@ class _AbsentScreenState extends State<AbsentScreen> {
                             'From : ',
                             style: TextStyle(
                               fontSize: 16,
-                              color: Colors.blue.shade900,
+                              color: Colors.greenAccent,
                               fontWeight: FontWeight.bold
                             ),
                           ),
@@ -217,12 +217,12 @@ class _AbsentScreenState extends State<AbsentScreen> {
                                         data: Theme.of(context).copyWith(
                                           colorScheme: ColorScheme.light(
                                             onPrimary: Colors.white,
-                                            onSurface: Colors.blue.shade900,
-                                            primary: Colors.blue.shade900,
+                                            onSurface: Colors.greenAccent,
+                                            primary: Colors.greenAccent,
                                           ),
                                           datePickerTheme: DatePickerThemeData(
                                             headerBackgroundColor:
-                                                Colors.blue.shade900,
+                                                Colors.greenAccent,
                                             backgroundColor: Colors.white,
                                             headerForegroundColor: Colors.white,
                                             surfaceTintColor: Colors.white,
@@ -246,7 +246,7 @@ class _AbsentScreenState extends State<AbsentScreen> {
                                 hintText: 'Starting from',
                                 hintStyle: TextStyle(
                                   fontSize: 16,
-                                  color: Colors.blue.shade900,
+                                  color: Colors.greenAccent,
                                 )
                               ),
                             ),
@@ -264,7 +264,7 @@ class _AbsentScreenState extends State<AbsentScreen> {
                             'Until : ',
                             style: TextStyle(
                               fontSize: 16,
-                              color: Colors.blue.shade900,
+                              color: Colors.greenAccent,
                               fontWeight: FontWeight.bold
                             ),
                           ),
@@ -282,12 +282,12 @@ class _AbsentScreenState extends State<AbsentScreen> {
                                         data: Theme.of(context).copyWith(
                                           colorScheme: ColorScheme.light(
                                             onPrimary: Colors.white,
-                                            onSurface: Colors.blue.shade900,
-                                            primary: Colors.blue.shade900,
+                                            onSurface: Colors.greenAccent,
+                                            primary: Colors.greenAccent,
                                           ),
                                           datePickerTheme: DatePickerThemeData(
                                             headerBackgroundColor:
-                                                Colors.blue.shade900,
+                                                Colors.greenAccent,
                                             backgroundColor: Colors.white,
                                             headerForegroundColor: Colors.white,
                                             surfaceTintColor: Colors.white,
@@ -311,7 +311,7 @@ class _AbsentScreenState extends State<AbsentScreen> {
                                 hintText: 'Until',
                                 hintStyle: TextStyle(
                                   fontSize: 16,
-                                  color: Colors.blue.shade900,
+                                  color: Colors.greenAccent,
                                 )
                               ),
                             ),
@@ -341,13 +341,13 @@ class _AbsentScreenState extends State<AbsentScreen> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           gradient: LinearGradient(
-                            colors: [Colors.blue.shade900, Colors.blueAccent],
+                            colors: [Colors.green, Colors.greenAccent],
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
                           ),
                         ),
                         child: InkWell(
-                          splashColor: Colors.blue,
+                          splashColor: Colors.green,
                           borderRadius: BorderRadius.circular(20),
                           onTap: () {
                             if (controllerName.text.isEmpty || controllerFrom.text.isEmpty || controllerTo.text.isEmpty || dropValueCategory == 'Please Select') {
@@ -383,7 +383,7 @@ class _AbsentScreenState extends State<AbsentScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.blue.shade900),
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.greenAccent),
             ),
             SizedBox(width: 10),
             Text('Checking data...')

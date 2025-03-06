@@ -61,7 +61,7 @@ class _CameraScreenState extends State<CameraScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.blueAccent),
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.greenAccent),
             ),
             SizedBox(width: 10),
             Text('Checking data...')
@@ -84,7 +84,7 @@ class _CameraScreenState extends State<CameraScreen> {
           flexibleSpace: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [Colors.blue.shade900,Colors.blueAccent,],
+                colors: [Colors.green,Colors.greenAccent,],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter
               )
@@ -149,15 +149,15 @@ class _CameraScreenState extends State<CameraScreen> {
           border: Border(
             top: BorderSide(
               width: 4,
-              color: Colors.blue.shade800.withOpacity(0.7), 
+              color: Colors.greenAccent.withOpacity(0.7), 
             ),
             left: BorderSide(
               width: 4,
-              color: Colors.blue.shade800.withOpacity(0.7), 
+              color: Colors.greenAccent.withOpacity(0.7), 
             ),
             right: BorderSide(
               width: 4,
-              color: Colors.blue.shade800.withOpacity(0.7), 
+              color: Colors.greenAccent.withOpacity(0.7), 
             ),
           ),
           gradient: LinearGradient(
@@ -187,9 +187,9 @@ class _CameraScreenState extends State<CameraScreen> {
               padding: const EdgeInsets.only(top: 40),
               child: ClipOval(
                 child: Material(
-                  color: Colors.blue.shade800.withOpacity(0.7),
+                  color: Colors.greenAccent.withOpacity(0.7),
                   child: InkWell(
-                    splashColor: Colors.blue.withOpacity(0.3),
+                    splashColor: Colors.green.withOpacity(0.3),
                     borderRadius: BorderRadius.circular(28),
                     child: const SizedBox(
                       width: 56,
