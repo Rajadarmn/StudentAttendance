@@ -1,4 +1,4 @@
-# 📸 Snap Attend - Smart Attendance System
+![Mockups Student Attendance](https://github.com/user-attachments/assets/d241f1ef-aae1-4c8f-9b8c-a6dd07213fef)# 📸 Snap Attend - Smart Attendance System
 
 Welcome to **Snap Attend**, the ultimate attendance tracking app powered by **Flutter** and **Firebase**! 🚀
 Snap Attend makes attendance management seamless, secure, and efficient with advanced face recognition, geolocation tracking, and real-time reporting.
@@ -46,9 +46,7 @@ Snap Attend is built using modern and efficient technologies:
 
 Here’s a sneak peek at what you can expect:  
 
-![app_preview](![Slide 16_9 - 4](https://github.com/user-attachments/assets/bf58310c-7444-49b7-a721-8c9e8c3a57f4)
-)
-
+![app_preview][Uploading Mockups Student Attendance.png…](https://github.com/user-attachments/assets/bf58310c-7444-49b7-a721-8c9e8c3a57f4)
 ---
 
 ## 🎯 Why Choose Snap Attend?
